@@ -60,7 +60,7 @@ def remove_duplicate_reads(fastx_file, output_file):
                 for sequence_id, sequence, _ in sequence_data:
                     file.write('>' + sequence_id + '\n')
                     file.write(sequence + '\n')
-
+    print("Duplicate reads removed and sorted unique reads have been written to", output_file)
 
 def count_reads(fastx_file):
     count = 0
